@@ -18,7 +18,7 @@ with open('100.csv', 'r') as csvfile:
 
 
 # Add a title and labels to the plot
-plt.title('Sample Dotted Scatter Plot')
+plt.title('Locally Weighted Regression')
 plt.xlabel('Total Bill')
 plt.ylabel('Tip')
 
