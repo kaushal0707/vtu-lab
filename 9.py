@@ -13,17 +13,10 @@ with open('100.csv', 'r') as csvfile:
         x.append(float(row[0]))
         y.append(float(row[1]))
 
-# Scatter plot with dotted markers
 
 
 
-# Add a title and labels to the plot
-plt.title('Locally Weighted Regression')
-plt.xlabel('Total Bill')
-plt.ylabel('Tip')
 
-# Show the plot
-plt.show()
 
 
 
@@ -34,4 +27,10 @@ lowess_y = list(zip(*lowess))[1]
 
 plt.scatter(x,y, color='green')
 plt.plot(lowess_y,lowess_x, color = 'red', linewidth=3)
+# Add a title and labels to the plot
+plt.title('Locally Weighted Regression')
+plt.xlabel('Total Bill')
+plt.ylabel('Tip')
 
+# Show the plot
+plt.show()
